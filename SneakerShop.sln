@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerShop", "SneakerShop\SneakerShop.csproj", "{73021ABF-66B9-404A-A4C9-B7F96B585AD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerShop.Domain", "SneakerShop.Domain\SneakerShop.Domain.csproj", "{8EBB625C-84A6-49B3-B07D-EDC6DB02D552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerShop.Application", "SneakerShop.Application\SneakerShop.Application.csproj", "{96B9770F-D04E-4690-A2F9-C442522D1164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerShop.Infrastructure", "SneakerShop.Infrastructure\SneakerShop.Infrastructure.csproj", "{7EAFF59B-1202-489E-A548-2F406D4996C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerShop.API", "SneakerShop.API\SneakerShop.API.csproj", "{30C9ECB5-54EE-464E-8124-9055ED360A9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E079EF0B-1307-4DB3-9D96-0CC9E4B584CF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +22,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73021ABF-66B9-404A-A4C9-B7F96B585AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73021ABF-66B9-404A-A4C9-B7F96B585AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73021ABF-66B9-404A-A4C9-B7F96B585AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73021ABF-66B9-404A-A4C9-B7F96B585AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBB625C-84A6-49B3-B07D-EDC6DB02D552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBB625C-84A6-49B3-B07D-EDC6DB02D552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBB625C-84A6-49B3-B07D-EDC6DB02D552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBB625C-84A6-49B3-B07D-EDC6DB02D552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B9770F-D04E-4690-A2F9-C442522D1164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B9770F-D04E-4690-A2F9-C442522D1164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B9770F-D04E-4690-A2F9-C442522D1164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B9770F-D04E-4690-A2F9-C442522D1164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAFF59B-1202-489E-A548-2F406D4996C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAFF59B-1202-489E-A548-2F406D4996C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAFF59B-1202-489E-A548-2F406D4996C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAFF59B-1202-489E-A548-2F406D4996C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C9ECB5-54EE-464E-8124-9055ED360A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C9ECB5-54EE-464E-8124-9055ED360A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C9ECB5-54EE-464E-8124-9055ED360A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C9ECB5-54EE-464E-8124-9055ED360A9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
