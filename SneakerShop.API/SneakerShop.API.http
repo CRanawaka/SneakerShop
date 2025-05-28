@@ -1,0 +1,6 @@
+@SneakerShop.API_HostAddress = http://localhost:5080
+
+GET {{SneakerShop.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
