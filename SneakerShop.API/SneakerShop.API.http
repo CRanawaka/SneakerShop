@@ -1,10 +1,8 @@
-@SneakerShop.API_HostAddress = https://localhost:7096
+@SneakerShop.API_HostAddress = http://localhost:5080
 
-GET {{SneakerShop.API_HostAddress}}/weatherforecast/
+### Get all categories
+GET {{SneakerShop.API_HostAddress}}/api/category
 Accept: application/json
 
 ###
 
-GET {{SneakerShop.API_HostAddress}}/weatherforecast
-
-###
