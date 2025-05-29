@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SneakerShop.Infrastructure.Persistence;
 
@@ -11,9 +12,11 @@ using SneakerShop.Infrastructure.Persistence;
 namespace SneakerShop.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250529155802_SeedCategories")]
+    partial class SeedCategories
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,7 +38,6 @@ namespace SneakerShop.Infrastructure.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("Price")
-                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Quantity")
@@ -74,19 +76,19 @@ namespace SneakerShop.Infrastructure.Migrations
                         new
                         {
                             Id = new Guid("11111111-1111-1111-1111-111111111111"),
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2025, 5, 29, 15, 58, 1, 467, DateTimeKind.Utc).AddTicks(3934),
                             Name = "Running Shoes"
                         },
                         new
                         {
                             Id = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2025, 5, 29, 15, 58, 1, 467, DateTimeKind.Utc).AddTicks(4613),
                             Name = "Basketball Shoes"
                         },
                         new
                         {
                             Id = new Guid("33333333-3333-3333-3333-333333333333"),
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2025, 5, 29, 15, 58, 1, 467, DateTimeKind.Utc).AddTicks(4621),
                             Name = "Casual Sneakers"
                         });
                 });
@@ -104,7 +106,6 @@ namespace SneakerShop.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("TotalAmount")
-                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<Guid>("UserId")
