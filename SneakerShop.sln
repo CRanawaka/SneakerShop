@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerShop.Domain", "SneakerShop.Domain\SneakerShop.Domain.csproj", "{8EBB625C-84A6-49B3-B07D-EDC6DB02D552}"
 EndProject
@@ -14,6 +14,27 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E079EF0B-1307-4DB3-9D96-0CC9E4B584CF}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "client", "client\", "{FE175189-C76E-4A9A-9D3F-731A345C9516}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54189"
+		Debug.AspNetCompiler.PhysicalPath = "client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54189\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54189"
+		Release.AspNetCompiler.PhysicalPath = "client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54189\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54189"
+		SlnRelativePath = "client\"
 	EndProjectSection
 EndProject
 Global
@@ -38,6 +59,10 @@ Global
 		{30C9ECB5-54EE-464E-8124-9055ED360A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30C9ECB5-54EE-464E-8124-9055ED360A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30C9ECB5-54EE-464E-8124-9055ED360A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE175189-C76E-4A9A-9D3F-731A345C9516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE175189-C76E-4A9A-9D3F-731A345C9516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE175189-C76E-4A9A-9D3F-731A345C9516}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE175189-C76E-4A9A-9D3F-731A345C9516}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
